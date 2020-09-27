@@ -3,7 +3,9 @@ sidebarDepth: 0
 ---
 
 # 常见问题
-
+目前这个bug我无法解决，错误前提是使用了配置文件中配置的逻辑删除功能，用service CRUD接口中的updateBatchById（）方法进行批量修改操作，再去更改操作这个逻辑删除字段时，拼出来的sql是错的；
+是这样的-->  UPDATE 表名 WHERE id='e8f1e799193487bc3ceb3a30b871dab5' AND del_flag='0'
+希望官方或者个人能够解决一下这个问题我的邮箱是：1152682942@qq.com   希望各路大神前来沟通
 [[toc]]
 
 ## 如何排除非表中字段？
